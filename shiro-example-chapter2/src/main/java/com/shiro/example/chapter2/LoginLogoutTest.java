@@ -10,6 +10,7 @@ import org.apache.shiro.util.Factory;
 import org.junit.Test;
 
 public class LoginLogoutTest {
+    //测试登录
     @Test
     public void test(){
         Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");

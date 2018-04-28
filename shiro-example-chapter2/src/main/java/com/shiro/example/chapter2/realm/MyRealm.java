@@ -24,6 +24,7 @@ public class MyRealm  implements Realm {
         if(!credentials.equals("123")){
             throw new IncorrectCredentialsException("密码不正确");
         }
+        System.out.println("第一个Realm");
         return new SimpleAuthenticationInfo(principal,credentials,getName());
     }
 }
